@@ -32,8 +32,8 @@ void main() {
 
   float time = uTime * 0.05;
   vec3 random = (aRandom * 10.0) + 1.0;
-  pos.x += 2.0 * sin((time + random.x) * random.y);
-  pos.y += 2.0 * cos((time + random.y) * random.x);
+  pos.x += 3.0 * sin((time + random.x) * random.y);
+  pos.y += 3.0 * cos((time + random.y) * random.x);
   pos.z += 4.0 * cos((time + random.z) * random.x);
 
   // float offsetTime = uTime + aRandom.x * 50.0;  // aRandom.xをオフセットとして使用
@@ -44,5 +44,5 @@ void main() {
 
   gl_Position = projectionMatrix * modelPosition;
   // gl_PointSize = 2.0;
-  gl_PointSize = 1.8 * (3000.0 / -modelPosition.z);
+  gl_PointSize = 1.4 * (3000.0 / -modelPosition.z);
 }

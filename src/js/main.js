@@ -153,7 +153,7 @@ class Particle {
     
 
     // パーティクル数を設定
-    this.countParticle = filteredPositions.length;
+    this.countParticle = filteredPositions.length / 3;
 
     console.log(geometry);
 
@@ -409,7 +409,7 @@ class Particle2 {
     
 
     // パーティクル数を設定
-    this.countParticle = filteredPositions.length;
+    this.countParticle = filteredPositions.length / 3;
 
     console.log(geometry);
 

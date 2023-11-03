@@ -32,9 +32,9 @@ void main() {
 
   float time = uTime * 0.05;
   vec3 random = (aRandom * 10.0) + 1.0;
-  pos.x += 2.0 * sin((time + random.x) * random.y);
-  pos.y += 2.0 * cos((time + random.y) * random.x);
-  pos.z += 4.0 * cos((time + random.z) * random.x);
+  // pos.x += 2.0 * sin((time + random.x) * random.y);
+  // pos.y += 2.0 * cos((time + random.y) * random.x);
+  // pos.z += 4.0 * cos((time + random.z) * random.x);
 
   // float offsetTime = uTime + aRandom.x * 50.0;  // aRandom.xをオフセットとして使用
   // float speed = 1.0 + aRandom.y * 2.0;  // aRandom.yを速度の乗数として使用
